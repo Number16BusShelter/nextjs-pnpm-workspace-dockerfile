@@ -56,6 +56,10 @@ FROM base AS build
 ARG SERVICE
 LABEL stage=builder
 
+ARG NODE_ENV
+ARG USE_CDN
+ARG UPLOAD_ENV
+
 WORKDIR /app
 
 ENV CI=true
